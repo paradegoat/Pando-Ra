@@ -38,10 +38,12 @@ body {
 
 h1 {
 	text-align: center;
-	font-family: 'Lily Script One', cursive;
-	font-size: 6vw;
-	padding-top: 2vw;
-	text-decoration: underline;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 7vw;
+	padding: 2vw 0vw;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 5%;
+	/*padding-top: 2.5vw;*/
 
 }
 
@@ -64,14 +66,16 @@ a {
 
 
 
-                /*//////////////////////////////////////////////*/
-            /*//////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
 /*///////////////    main artwork      //////////////////////*/
-            /*/////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////*/
+.top-box{
+	border: 2px solid yellow;
+	padding: 2vw !important;
+}
 
 .picture-box {
-	/*margin: 4vw !important;*/
-  /*border: .2vw solid rgb(106, 59, 29);*/
   height: 40vw;
 	width: 100%;
   border-radius: 1%;
@@ -87,41 +91,24 @@ a {
 }
 
 .title {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3c/e5/24/3ce52416c98d2fad100ed7d5021aa08b.jpg);
-
-	background-color: rgba(255, 255, 255, .1);
-	/*background-position: center;
+	background: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
+	background-position: center;
 	background-size: auto;
-	background-position: 77vw 46vw;*/
+	background-position: 77vw 46vw;
 	height: 10vw;
   width: 40vw;
-  border: .5vw solid white;
+  border: .1vw solid white;
 	border-radius: 5%;
   z-index: 3;
   position: absolute;
   top: 10vw;
 	right: 30vw;
-	box-shadow: 1vw 1vw .5vw;
-	padding-bottom: 3vw;
-	text-decoration: none !important;
+	box-shadow: 1vw 1vw 4vw;
+	padding-bottom: 2.5vw;
+	/*text-decoration: none !important;*/
 }
 
-
-
-.title::after {
-  content: "";
-  background: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
-  opacity: 0.9;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-
-.twitter{
+.twitter-logo{
 	background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png);
 	background-size: 100%;
 	background-position: center;
@@ -140,7 +127,7 @@ a {
 
 }
 
-.facebook {
+.facebook-logo{
 	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b3/26/b5/b326b5f8d23cd1e0f18df4c9265416f7.png);
 	background-size: 125%;
 	background-position: center;
@@ -347,9 +334,4 @@ img {
 
   width: 100%;
 	padding: 0vw;
-}
-
-.top-box{
-	/*border: 2px solid black;*/
-	padding: 2vw !important;
 }
