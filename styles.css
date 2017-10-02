@@ -33,8 +33,8 @@ body {
   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3c/e5/24/3ce52416c98d2fad100ed7d5021aa08b.jpg);
 	background-position: center;
 	background-size: contain;
-
 }
+
 
 h1 {
 	text-align: center;
@@ -47,7 +47,6 @@ h1 {
 
 a {
 	color: black;
-
 }
 
 .title:focus, .twitter:focus, .facebook:focus{
@@ -71,31 +70,29 @@ a {
             /*/////////////////////////////////////////////*/
 
 .picture-box {
-	margin-top: 3vw;
-  border: .5vw solid white;
+	/*margin: 4vw !important;*/
+  /*border: .2vw solid rgb(106, 59, 29);*/
   height: 40vw;
+	width: 100%;
   border-radius: 1%;
   background-image: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
   background-position: center;
-  border-left: none;
-  border-right: none;
   z-index: 1;
   position: relative;
+	transition: all 6s ease-in-out;
 }
 
-.grow {
-	transition: all 3s ease-in-out;
-}
-.grow:hover {
+.picture-box:hover {
 	transform: scale(1.1);
 }
 
 .title {
-	background-image: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
-	background-color: rgba(white,0,0,0.7);
-	background-position: center;
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3c/e5/24/3ce52416c98d2fad100ed7d5021aa08b.jpg);
+
+	background-color: rgba(255, 255, 255, .1);
+	/*background-position: center;
 	background-size: auto;
-	background-position: 77vw 46vw;
+	background-position: 77vw 46vw;*/
 	height: 10vw;
   width: 40vw;
   border: .5vw solid white;
@@ -131,12 +128,12 @@ a {
 	background-repeat: no-repeat;
 	height: 4vw;
   width: 4vw;
-  border: .5vw solid white;
+  border: .2vw solid rgb(71, 162, 236);
   z-index: 3;
   position: absolute;
   top: 4vw;
 	right: 5vw;
-	box-shadow: .5vw .5vw .5vw;
+	box-shadow: .5vw .5vw .9vw;
 	padding: 1vw;
 	border-radius: 10%;
 	text-decoration: none !important;
@@ -150,13 +147,13 @@ a {
 	background-repeat: no-repeat;
 	height: 6vw;
   width: 6vw;
-  border: .5vw solid white;
+  border: .2vw solid rgb(71, 89, 147);
   z-index: 3;
   position: absolute;
   top: 4vw;
-	right: 13vw;
-	box-shadow: .5vw .5vw .5vw;
-text-decoration: none !important;
+	right: 15vw;
+	box-shadow: .5vw .5vw .9vw;
+	text-decoration: none !important;
 	border-radius: 10%;
 }
 
@@ -167,7 +164,9 @@ text-decoration: none !important;
             /*//////////////////////////////////////////////*/
 /*///////////////    search bar and button style      //////////////////////*/
           /*/////////////////////////////////////////////*/
-
+#search{
+	/*display: none;*/
+}
 
 .search, .player {
  	margin: 5% 5%;
@@ -183,13 +182,18 @@ text-decoration: none !important;
 
 .inputStyle{
   margin-left: 15vw;
+
 }
 
-input[type=text] {
+#searchField{
   font-size: 3vw;
 	width: 40vw;
-	background-color: rgb(185, 185, 163);
+	background-color: rgba(255, 255, 255, .5);
 	font-family: 'Lily Script One', cursive;
+}
+
+input {
+	color: black;
 }
 
 input:focus {
@@ -207,7 +211,6 @@ input:focus {
 	left: 48vw;
 	box-shadow: 1vw .5vw .5vw black;
 	font-size: 3vw;
-
 	font-family: 'Lily Script One', cursive;
 	background-color: rgb(191,125,27);
 	border: none;
@@ -243,12 +246,12 @@ audio::-webkit-media-controls-panel {
 }
 
 audio::-webkit-media-controls-volume-slider {
-	background-color: grey;
+	background-color: black;
 }
 
 
 audio::-webkit-media-controls-timeline {
-	background-color: grey;
+	background-color: black;
 }
 
 
@@ -258,10 +261,10 @@ audio::-webkit-media-controls-timeline {
 /*/////////////			albums style     ////////////////////////////*/
 					/*//////////////////////////////////////////////*/
 
-.container {
+.bottom-box {
 	background-image: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
 	background-size: 125%;
-  border: .5vw solid white;
+  /*border: .5vw solid white;*/
   z-index: 3;
   position: absolute;
   width: 100%;
@@ -270,12 +273,26 @@ audio::-webkit-media-controls-timeline {
 	border-radius: 10%;
 }
 
+/*.grow {
+	width: 100%;
+}*/
+
 h3 {
   	font-family: 'Lily Script One', cursive;
 		font-size: 7vw;
 		margin: 1vw;
 		text-decoration: underline;
+}
 
+.bottom-box{
+
+}
+
+.clearBox{
+	/*border: 2px solid red;*/
+}
+.resultsBox{
+	/*border: 2px solid blue;*/
 }
 
 #results-box {
@@ -286,8 +303,7 @@ h3 {
   justify-content: center;
   text-align:center;
 	font-size: 2vw;
-	margin-top: 2vw;
-
+	/*margin: 2vw;*/
 }
 
 #results-box image{
@@ -301,7 +317,7 @@ h3 {
 	width: 100%;
 }
 
-.results-box {
+/*.results-box {
   margin: 2vw;
   text-align:center;
   justify-content: space-between;
@@ -309,7 +325,7 @@ h3 {
   width: 23%;
 	border-radius: 5%;
 	background-color: rgb(241, 197, 57);
-}
+}*/
 
 ul {
   list-style-type: none;
@@ -331,4 +347,9 @@ img {
 
   width: 100%;
 	padding: 0vw;
+}
+
+.top-box{
+	/*border: 2px solid black;*/
+	padding: 2vw !important;
 }

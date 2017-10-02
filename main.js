@@ -1,7 +1,5 @@
-// get rid of highlight around links in corner
-// center content in results-box
-//
-const searchButton = document.getElementById("search");
+
+let searchButton = document.getElementById("search");
 
 searchButton.addEventListener("click", function(event) {
   let searchField = document.getElementById("searchField").value;
@@ -58,31 +56,3 @@ searchButton.addEventListener("click", function(event) {
     }
   );
 })
-
-
-// need an onclick for the image grabs the stream_url for the track and
-
-// // // 2. Create your `onSubmit` event for getting the user's search term
-
-//
-//       // move text from search bar to search  url (dont know how)
-//
-//
-//     })
-// //   // on submit need to push to sound cloud and return song info to player and
-// //   // artwork and text to grid (the false at the end was something from stack that
-// // // said it was useful 95% of cases.  need to look that up)
-// // }, false);
-//
-// ///////////////////////////////////////////////////
-// ////   to search the api for tracks  i would want a few things//////////////////////
-// ///////////////////////////////////////////////////
-// // Below!!!! the q:"", is the search
-//
-// // // 3. Create your `fetch` request that is called after a submission
-// //
-//
-// // 4. Create a way to append the fetch results to your page
-
-
-// 5. Create a way to listen for a click that will play the song in the audio play

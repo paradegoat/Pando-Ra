@@ -4,32 +4,35 @@
   <title>SoundCloud Music Search</title>
   <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
-  <link rel="stylesheet" href="/Users/heybuddy/Desktop/Week_4_Project/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-  <div class= "picture-box grow" id ="glass" ></div>
-  <a href= ""><div class= "title"><h1>PANDO-RA</h1></div></a>
+  <div class= "top-box">
+    <div class= "picture-box" id ="glass"></div>
+    <a href= ""><div class= "title"><h1>PANDO-RA</h1></div></a>
   <!-- just seemed like the tittle should be clickable for no reason -->
-  <a href= ""><div class= "twitter"></div></a>
-  <a href= ""><div class= "facebook"></div></a>
+    <a href= ""><div class= "twitter"></div></a>
+    <a href= ""><div class= "facebook"></div></a>
 
-  <section id="audioWrap" class="audioStyle">
-  </section>
+    <section id="audioWrap" class="audioStyle">
+</section>
 
-  <section class="search">
-    <form class="search-form">
-      <input class= "inputStyle" id= "searchField" type="text" autocomplete="off" placeholder="Search..." required >
-      <span><button  id= "search" class= "search-button" type="button" value="search">Bring the noise</button></span>
-    </form>
-  </section>
+<section class="search">
 
-  <div class="container grow" style="background-color:rgba(0, 0, 0, 0.5);">
-    <div class= clearBox>
+  <input class= "inputStyle" id= "search" type="text" autocomplete="off" value="" placeholder="Search..." required >
+
+</section>
+</div>
+<div class="bottom-box">
+  <div class="container">
+    <div class= "clearBox">
       <h3>Search Results:</h3>
     </div>
-    <div id= "results-box">
+    <div class="resultsBox"id= "results-box">
     </div>
   </div>
+</div>
   <script src="main.js"></script>
 </body>
 </html>
