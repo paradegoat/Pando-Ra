@@ -4,6 +4,7 @@ console.log("checking in.....HEY HEY");
 let trackInput = document.getElementById("trackInput");
 let submitButton = document.getElementById("submitButton");
 submitButton.onclick = searchTracks;
+trackInput.focus();
 
 document.body.addEventListener('keydown', function(e) {
     if(e.keyCode === 13) {
@@ -31,8 +32,8 @@ function searchTracks() {
                 <div class= "clearBox">
                   <h3>Search Results:</h3>
                 </div>
-                </div>
-                <div class="container">
+            </div>
+              <div class="container">
               ${newData.map( element =>
                 `
                 <div class="results-box">

@@ -31,9 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3c/e5/24/3ce52416c98d2fad100ed7d5021aa08b.jpg);
-	background-position:center;
-	background-size: contain;
-	background-
+	background-position:bottom;
+	background-size: cover;-
 }
 
 
@@ -44,23 +43,21 @@ h1 {
 	padding: 2vw 0vw;
 	background-color: rgba(255, 255, 255, .5);
 	border-radius: 5%;
-	/*padding-top: 2.5vw;*/
-
 }
 
 a {
 	color: black;
 }
 
-.title:focus, .twitter:focus, .facebook:focus{
+.pun:focus, .twitter-logo:focus, .facebook-logo:focus, .audioTrigger:focus{
 	outline:0;
 }
 
-.title.hover, .twitter.hover, .facebook.hover {
+.pun.hover, .twitter-logo.hover, .facebook-logo.hover, .audioTrigger.hover {
 	cursor: pointer;
 }
 
-.title:active, .twitter:active, .facebook:active {
+.pun:active, .twitter-logo:active, .facebook-logo:active, .audioTrigger:active {
 	box-shadow: 0 2px #27496d;
   transform: translateY(2px);
 }
@@ -72,11 +69,10 @@ a {
 /*///////////////    main artwork      //////////////////////*/
 /*/////////////////////////////////////////////////////////*/
 .top-box{
-	/*border: 2px solid yellow;*/
 	padding: 2vw !important;
 	width: 100%;
 	z-index: 1;
-
+	/*border: 2px solid yellow;*/
 }
 
 .picture-box {
@@ -88,6 +84,7 @@ a {
   z-index: 1;
   position: relative;
 	transition: all 6s ease-in-out;
+	box-shadow: 1vw 1vw 4vw;
 	/*border: 2px solid red;*/
 }
 
@@ -111,7 +108,6 @@ a {
 	right: 30vw;
 	box-shadow: 1vw 1vw 4vw;
 	padding-bottom: 2.5vw;
-	/*text-decoration: none !important;*/
 }
 
 .twitter-logo{
@@ -121,7 +117,7 @@ a {
 	background-repeat: no-repeat;
 	height: 4vw;
   width: 4vw;
-  border: .2vw solid rgb(71, 162, 236);
+  border: .15vw solid rgb(71, 162, 236);
   z-index: 3;
   position: absolute;
   top: 4vw;
@@ -130,7 +126,6 @@ a {
 	padding: 1vw;
 	border-radius: 10%;
 	text-decoration: none !important;
-
 }
 
 .facebook-logo{
@@ -140,7 +135,7 @@ a {
 	background-repeat: no-repeat;
 	height: 6vw;
   width: 6vw;
-  border: .2vw solid rgb(71, 89, 147);
+  border: .15vw solid rgb(71, 89, 147);
   z-index: 3;
   position: absolute;
   top: 4vw;
@@ -151,12 +146,10 @@ a {
 }
 
 
-
-
-            /*//////////////////////////////////////////////*/
-            /*//////////////////////////////////////////////*/
-/*///////////////    search bar and button style      //////////////////////*/
-          /*/////////////////////////////////////////////*/
+  /*//////////////////////////////////////////////*/
+/*//////////////////////////////////////////////*/
+/*///// search bar and button style //////////////////////*/
+/*/////////////////////////////////////////////*/
 
 .search{
 	z-index: 3;
@@ -170,56 +163,30 @@ a {
 .search-bar{
 outline: none;
 width: 40vw;
-/*border: .001px solid grey;*/
-text-transform: capitalize;
-background-color: rgba(255, 255, 255, .5);
+background-color: rgba(255, 255, 255, .7);
 border-radius: 10px;
 font-family: 'Fredericka the Great', cursive;
 font-size: 3vw;
 color: black;
+/*border: .001px solid grey;*/
 }
 
 input {
 	color: black;
 }
 
-input:focus {
-	outline:0;
-}
 #submitButton {
 	display: none;
 }
-/*.search-button {
-  width: 25vw;
-  height: 5vw;
-  border-radius: 1%;
-	z-index: 3;
-	position: relative;
-	position: absolute;
-	top: 3vw;
-	left: 48vw;
-	box-shadow: 1vw .5vw .5vw black;
-	font-size: 3vw;
-	font-family: 'Lily Script One', cursive;
-	background-color: rgb(191,125,27);
-	border: none;
-	cursor: pointer;
-}*/
 
-/*button:focus {
-	outline:0;
-}
-
-button:active {
-	box-shadow: 0 2px #27496d;
-  transform: translateY(2px);
-}*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*///////////////    audio      //////////////////////*/
+/*/////////////////////////////////////////////////////////*/
 
 .audioStyle {
 	width: 60vw;
-
 }
-
 
 audio::-webkit-media-controls-panel {
 	z-index: 3;
@@ -238,67 +205,46 @@ audio::-webkit-media-controls-volume-slider {
 	background-color: black;
 }
 
-
 audio::-webkit-media-controls-timeline {
 	background-color: black;
 }
 
-
-
-					/*//////////////////////////////////////////////*/
-					/*//////////////////////////////////////////////*/
-/*/////////////			albums style     ////////////////////////////*/
-					/*//////////////////////////////////////////////*/
+/*//////////////////////////////////////////////*/
+/*//////////////////////////////////////////////*/
+/*/////////////			search results   ////////////////////////////*/
+/*//////////////////////////////////////////////*/
 
 .bottom-box {
 	display: grid;
 	background-image: url('./public/paper.jpeg');
-	/*background-size: 100%;*/
-  /*border: .5vw solid white;*/
   z-index: 3;
-  /*position: absolute;*/
 	width: 80%;
 	align-content: center;
-	margin-left: 12vw;
-
-
-  /*width: 80%;*/
+	margin-left: 10vw;
+  width: 80%;
 	box-shadow: .5vw .5vw .5vw;
 	text-align: center;
-	border-radius: 10%;
-	/*margin: 0vw 3vw;*/
+	border-radius: 2%;
+	/*border: .5vw solid white;*/
 }
 
 .container{
-	/*display: flex;
-	flex-flow: row wrap;*/
-
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 3vw;
 }
 
 h3 {
 	font-family: 'Fredericka the Great', cursive;
-	/*background-color: rgba(255, 255, 255, .5);*/
 	font-size: 4vw;
-	/*width: 50%;*/
 	margin: 1vw;
 }
-
-
-/*#results-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-	height: inherit;
-  justify-content: center;
-  text-align:center;
-	font-size: 2vw;
-	margin: 2vw;
-}*/
 
 #results-box image{
 	background-position: center;
 	padding: 0;
 	color: none;
+	border:
 }
 
 #results-box button {
@@ -308,32 +254,24 @@ h3 {
 
 .results-box {
   margin: 2vw;
+	padding-top: 2vw;
   text-align:center;
   justify-content: space-between;
   border: .01vw solid white;
-  width: 15%;
+  width: 20%;
 	border-radius: 5%;
+	box-shadow: 1vw 1vw 4vw;
 	background-image: url('./public/paper.jpeg');
 }
 
-
-
 .title-element{
+	margin-top: 2vw;
 	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-}
-.recent-album {
-  text-align:center;
-}
-
-figcaption {
-  line-height: 3vw;
-	word-wrap: break-word;
+	font-size: 2vw;
 }
 
 img {
-
   width: 100%;
 	padding: 0vw;
+	box-shadow: 1vw 1vw .9vw;
 }
