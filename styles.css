@@ -31,8 +31,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3c/e5/24/3ce52416c98d2fad100ed7d5021aa08b.jpg);
-	background-position: center;
+	background-position:center;
 	background-size: contain;
+	background-
 }
 
 
@@ -71,26 +72,31 @@ a {
 /*///////////////    main artwork      //////////////////////*/
 /*/////////////////////////////////////////////////////////*/
 .top-box{
-	border: 2px solid yellow;
+	/*border: 2px solid yellow;*/
 	padding: 2vw !important;
+	width: 100%;
+	z-index: 1;
+
 }
 
 .picture-box {
   height: 40vw;
-	width: 100%;
+	width: 95%;
   border-radius: 1%;
   background-image: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
   background-position: center;
   z-index: 1;
   position: relative;
 	transition: all 6s ease-in-out;
+	/*border: 2px solid red;*/
 }
 
 .picture-box:hover {
+	z-index: 1;
 	transform: scale(1.1);
 }
 
-.title {
+.pun {
 	background: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
 	background-position: center;
 	background-size: auto;
@@ -151,32 +157,26 @@ a {
             /*//////////////////////////////////////////////*/
 /*///////////////    search bar and button style      //////////////////////*/
           /*/////////////////////////////////////////////*/
-#search{
-	/*display: none;*/
-}
 
-.search, .player {
- 	margin: 5% 5%;
-}
-
-.search-form {
+.search{
 	z-index: 3;
-	position: relative;
 	position: absolute;
-  top: 30vw;
-	right: 35vw;
+	top: 30vw;
+	left: 30vw;
+	display: flex;
+	justify-content: center;
 }
 
-.inputStyle{
-  margin-left: 15vw;
-
-}
-
-#searchField{
-  font-size: 3vw;
-	width: 40vw;
-	background-color: rgba(255, 255, 255, .5);
-	font-family: 'Lily Script One', cursive;
+.search-bar{
+outline: none;
+width: 40vw;
+/*border: .001px solid grey;*/
+text-transform: capitalize;
+background-color: rgba(255, 255, 255, .5);
+border-radius: 10px;
+font-family: 'Fredericka the Great', cursive;
+font-size: 3vw;
+color: black;
 }
 
 input {
@@ -186,8 +186,10 @@ input {
 input:focus {
 	outline:0;
 }
-
-.search-button {
+#submitButton {
+	display: none;
+}
+/*.search-button {
   width: 25vw;
   height: 5vw;
   border-radius: 1%;
@@ -202,16 +204,16 @@ input:focus {
 	background-color: rgb(191,125,27);
 	border: none;
 	cursor: pointer;
-}
+}*/
 
-button:focus {
+/*button:focus {
 	outline:0;
 }
 
 button:active {
 	box-shadow: 0 2px #27496d;
   transform: translateY(2px);
-}
+}*/
 
 .audioStyle {
 	width: 60vw;
@@ -249,40 +251,40 @@ audio::-webkit-media-controls-timeline {
 					/*//////////////////////////////////////////////*/
 
 .bottom-box {
-	background-image: url(https://theextremehorticulturist.files.wordpress.com/2015/07/aspen-tree-3.jpg);
-	background-size: 125%;
+	display: grid;
+	background-image: url('./public/paper.jpeg');
+	/*background-size: 100%;*/
   /*border: .5vw solid white;*/
   z-index: 3;
-  position: absolute;
-  width: 100%;
+  /*position: absolute;*/
+	width: 80%;
+	align-content: center;
+	margin-left: 12vw;
+
+
+  /*width: 80%;*/
 	box-shadow: .5vw .5vw .5vw;
 	text-align: center;
 	border-radius: 10%;
+	/*margin: 0vw 3vw;*/
 }
 
-/*.grow {
-	width: 100%;
-}*/
+.container{
+	/*display: flex;
+	flex-flow: row wrap;*/
+
+}
 
 h3 {
-  	font-family: 'Lily Script One', cursive;
-		font-size: 7vw;
-		margin: 1vw;
-		text-decoration: underline;
+	font-family: 'Fredericka the Great', cursive;
+	/*background-color: rgba(255, 255, 255, .5);*/
+	font-size: 4vw;
+	/*width: 50%;*/
+	margin: 1vw;
 }
 
-.bottom-box{
 
-}
-
-.clearBox{
-	/*border: 2px solid red;*/
-}
-.resultsBox{
-	/*border: 2px solid blue;*/
-}
-
-#results-box {
+/*#results-box {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -290,8 +292,8 @@ h3 {
   justify-content: center;
   text-align:center;
 	font-size: 2vw;
-	/*margin: 2vw;*/
-}
+	margin: 2vw;
+}*/
 
 #results-box image{
 	background-position: center;
@@ -301,23 +303,23 @@ h3 {
 
 #results-box button {
 	padding: 0;
-	width: 100%;
+	width: 80%;
 }
 
-/*.results-box {
+.results-box {
   margin: 2vw;
   text-align:center;
   justify-content: space-between;
-  border: .75vw solid white;
-  width: 23%;
+  border: .01vw solid white;
+  width: 15%;
 	border-radius: 5%;
-	background-color: rgb(241, 197, 57);
-}*/
+	background-image: url('./public/paper.jpeg');
+}
 
-ul {
-  list-style-type: none;
-  text-align:center;
-	padding-right: 3vw;
+
+
+.title-element{
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 }

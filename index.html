@@ -4,30 +4,31 @@
   <title>SoundCloud Music Search</title>
   <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
+  <div class="butt">
   <div class= "top-box">
     <div class= "picture-box" id ="glass"></div>
-    <a href= ""><div class= "title"><h1>PANDO-RA</h1></div></a>
+    <a href= ""><div class= "pun"><h1>PANDO-RA</h1></div></a>
     <a href= ""><div class= "twitter-logo"></div></a>
     <a href= ""><div class= "facebook-logo"></div></a>
-    <section id="audioWrap" class="audioStyle"></section>
+
+    <!-- <section class="search">
+      <input class= "search-bar" id= "search" type="text" autocomplete="off" value="" placeholder="Search..." >
+    </section> -->
 
     <section class="search">
-      <input class= "inputStyle" id= "search" type="text" autocomplete="off" value="" placeholder="Search..." required >
+      <input class="search-bar" type="text" onkeydown="key_down(e)" id="trackInput">
+      <button type="submit" id="submitButton"name="button">SUBMIT</button>
     </section>
-  </div>
 
-  <div class="bottom-box">
-    <div class="container">
-      <div class= "clearBox">
-        <h3>Search Results:</h3>
-      </div>
-    <div class="resultsBox"id= "results-box"></div>
-    </div>
+    <section id="audioWrap" class="audioStyle"></section>
+  </div>
+    <div id= "results-box"></div>
   </div>
   <script src="main.js"></script>
 </body>
